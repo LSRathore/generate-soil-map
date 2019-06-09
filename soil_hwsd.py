@@ -1,3 +1,13 @@
+"""
+Created on June 9th, 2019
+@author: Lokendra Singh Rathore
+@National Institute of Hydrology, Roorkee, India
+@email: lokendra.nalu@gmail.com
+
+Use this script for generate soil map (FAO).
+Make sure arcpy is installed
+"""
+
 import arcpy
 
 
@@ -13,7 +23,7 @@ hwsd="G:\\Rathore\\HWSD_RASTER\\hwsd.bil"                   ### Location of hwsl
 
 #  DO NOT  EDIT FROM  HERE
 arcpy.env.overwriteOutput=True
-
+print "All necessary files have been imported, processing starts.... \n"
 
 out=arcpy.sa.ExtractByMask(hwsd,basin)
 out.save("hwsd_ext")
@@ -23,6 +33,6 @@ arcpy.JoinField_management("hwsd_ext","VALUE","hwsd_tab","MU_GLOBAL")
 out_re=arcpy.sa.Reclassify("hwsd_ext","T_USDA_TEX",arcpy.sa.RemapValue([[0,0],[1,1],[2,2],[3,3],[4,4],[5,5],[6,6],[7,7],[8,8],[9,9],[10,10],[11,11],[12,12],[13,13]]))
 out_re.save("soil_fao")
 arcpy.ExcelToTable_conversion(text_class,"text_class_tab2")
-arcpy.JoinField_management("soil_fao1","VALUE","text_class_tab2","CODE")
+arcpy.JoinField_management("soil_fao","VALUE","text_class_tab2","CODE")
 
 print "A soil map for the given basin area has been perpared with the name soil_fao in the workspace"
