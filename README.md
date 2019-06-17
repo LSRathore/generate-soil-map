@@ -11,4 +11,6 @@ HOW TO USE:
 
 2. Open the "soil_hwsd.py" and put the paths of required data (mentioned in the script)
 
-3. All the necessary files (hwsd.bil, hwsd class and texture excel files) are provided.
+3. Extract the ZIP file and provide the path of 'hwsd.bil' file from there
+
+4. All the required files (hwsd.bi, hwsd class data, soil class) are provided with the code. Edit the path of these file in 'soil_hwsd.py' file.
