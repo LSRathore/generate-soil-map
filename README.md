@@ -15,6 +15,6 @@ HOW TO USE:
 
 4. All the required files (hwsd.bi, hwsd class data, soil class) are provided with the code. Edit the path of these file in 'soil_hwsd.py' file.
 
-#WORLD SOIL MAP
+# WORLD SOIL MAP
 
 A soil map of whole globe has been prepared using HWSD FAO data and uploaded in `world_soil.rar` file in the repo. User caan download that and extract soil map for desired area.
