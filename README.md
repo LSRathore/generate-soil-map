@@ -17,4 +17,4 @@ HOW TO USE:
 
 # WORLD SOIL MAP
 
-A soil map of whole globe has been prepared using HWSD FAO data and uploaded in `world_soil.rar` file in the repo. User caan download that and extract soil map for desired area.
+A soil map of whole globe has been prepared using HWSD FAO data and uploaded in `world_soil.rar` file in the repo. User can download that and extract soil map for desired area.
