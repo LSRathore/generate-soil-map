@@ -1,5 +1,5 @@
 # generate-soil-map
-This python script generates soil map for any place in the world. 
+This python script generates soil map with a shapefile. 
 
 It takes basin shapefile as an input and generate soil map using hwsd provided by FAO. More about hwsd can be found on the following link:
 
